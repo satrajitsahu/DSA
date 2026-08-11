@@ -2,7 +2,8 @@ class Solution {
 public:
     int missingInteger(vector<int>& nums) {
         int presum=nums[0];
-        for(int i=1;i<nums.size();i++){
+        int n=nums.size();
+        for(int i=1;i<n;i++){
             if(nums[i]==nums[i-1]+1){
                 presum=presum+nums[i];
             }else{
