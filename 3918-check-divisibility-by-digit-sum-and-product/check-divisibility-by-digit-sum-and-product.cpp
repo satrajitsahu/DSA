@@ -10,10 +10,6 @@ public:
             pro*=digit;
             ans/=10;
         }
-        if(n%(sum+pro)==0){
-            return true;
-        }else{
-            return false;
-        }
+        return n%(sum+pro)==0;
     }
 };
